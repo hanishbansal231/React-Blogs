@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 function BlogDetails({ post }) {
     return (
-        <div>
+        <div className='w-full h-full flex flex-col gap-y-1 justify-center items-center'>
             <div key={post.id} className=''>
                 <NavLink to={`/blog/${post.id}`}>
                     <p className='font-bold text-lg'>{post.title}</p>
